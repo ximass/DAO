@@ -12,9 +12,30 @@ require_once("config.php");
 //$lista = Usuario::getList();
 //echo json_encode($lista);
 
-$usuario = new Usuario();
-$usuario ->login("root", "panico7");
+//$usuario = new Usuario();
+//$usuario ->login("root", "panico7");
+//echo $usuario;
+
+/*$aluno = new Usuario();
+$aluno -> setDessenha("1234");
+$aluno -> setDeslogin("jao");
+$aluno -> insert();
+echo $aluno;
+*/
+
+/*$usuario = new Usuario();
+$usuario -> loadById(6);
+$usuario -> update("joao", "123456");
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario -> loadById(7);
+$usuario -> delete();
+echo $usuario;
+
+
+
 
 
 
